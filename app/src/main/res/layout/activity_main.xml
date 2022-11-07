@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_begin"
+        android:textAppearance="@style/styleText"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/countText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:fontFamily="serif"
+        android:layout_gravity="center|bottom"/>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/dark_grey"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="20dp"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/select_button"
+        android:padding="20dp"
+        android:src="@drawable/plus"
+        tools:ignore="RtlHardcoded,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/select_button"
+        android:padding="20dp"
+        android:src="@drawable/minus"
+        tools:ignore="RtlHardcoded,SpeakableTextPresentCheck,ImageContrastCheck" />
+</FrameLayout>
